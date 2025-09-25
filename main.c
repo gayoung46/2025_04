@@ -4,14 +4,13 @@
 int main(int argc, char *argv[])
 {
   
-  int a;
+  int year;
   
-  printf("input the second : ");
-  scanf("%i", &a);
+  printf("input the year : ");
+  scanf("%i", &year);
   
-  printf("the time is %i : %i \n", a/60, a%60);
+  printf("is the year %i the lear year? : %i \n", year, (year%4==0)&&(year%100!=0)||(year%400==0));
    
-  
   system("PAUSE");	
   return 0;
 }
